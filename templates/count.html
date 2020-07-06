@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>There are {{count}} words in the text</h1>
+    <pre>
+        {{fulltext}}
+    </pre>
+    <ol>
+        {% for word, val in dict.items %}
+            <li>
+                {{word}} : {{val}}
+            </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
